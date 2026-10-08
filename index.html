@@ -4,12 +4,39 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pelota que rebota</title>
-    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.3/lib/p5.min.js"></script>
+    <title>Luna que rebota</title>
+    <!-- Evita el error 404 de favicon.ico que pide el navegador por defecto -->
+    <link rel="icon" href="data:,">
+    <!-- Tipografía moderna y divertida -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico: quita el margen por defecto y evita barras de scroll */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            /* Fondo moderno con degradado; el canvas queda transparente (clear) */
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+    <!-- p5.sound solo viene incluido en p5 1.x (lib/addons), por eso fijamos 1.11.13 -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/addons/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
 </head>
 <body>
-    <h1>Pelota que rebota</h1>
 
 </body>
 </html>
